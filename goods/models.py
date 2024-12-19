@@ -1,4 +1,3 @@
-from unicodedata import category
 from django.db import models
 
 
@@ -12,7 +11,7 @@ class Categories(models.Model):
         verbose_name_plural = 'Категория'
 
     def __str__(self):
-        return self.name
+        return f'{self.name}'
     
 
 
